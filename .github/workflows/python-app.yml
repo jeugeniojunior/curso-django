@@ -29,9 +29,12 @@ jobs:
         pip install pipenv
         pipenv install gunicorn
         pipenv sync --dev
+        pipenv install 'pytest-django'
     - name: Lint with flake8
       run: |
         pipenv install --dev flake8
         pipenv run flake8 .
       continue-on-error: true
-    
+    - name: Testes com o Pytest
+      run: |
+        pipenv run pytest
