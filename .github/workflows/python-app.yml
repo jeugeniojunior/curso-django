@@ -37,3 +37,13 @@ jobs:
     - name: Testes com o Pytest
       run: |
         pipenv run pytest
+    - name: Cobertura de testes
+      run: | 
+        pipenv run pytest --cov=pypro
+    - name: Relatorio Coverage
+      run: |
+        pipenv run codecov
+      env:
+        CODECOV_TOKEN: ddd7a37b-b38c-4a0b-9a3a-cb91862fd4db
+        
+
