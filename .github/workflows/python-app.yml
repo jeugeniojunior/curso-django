@@ -34,3 +34,6 @@ jobs:
         pipenv install --dev flake8
         pipenv run flake8 .
       continue-on-error: true
+    - name: Testes com o Pytest
+      run: |
+        pipenv run pytest
