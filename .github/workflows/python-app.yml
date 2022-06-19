@@ -44,6 +44,6 @@ jobs:
       run: |
         pipenv run codecov
       env:
-        CODECOV_TOKEN: ddd7a37b-b38c-4a0b-9a3a-cb91862fd4db
+        CODECOV_TOKEN: 52d7d221-24b2-48fb-81e2-1fe70b05b8ca
         
 
