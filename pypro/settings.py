@@ -28,7 +28,9 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', cast=bool)
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['pythonprodjango1.herokuapp.com', '127.0.0.1']
+
+#config('ALLOWED_HOSTS', cast=Csv())# ['pythonprodjango1.herokuapp.com']
 
 
 # Application definition
